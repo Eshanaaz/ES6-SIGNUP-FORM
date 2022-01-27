@@ -1,0 +1,157 @@
+:root{
+    --bg1: #040406;
+    --bg2: #323234;
+    --boxShadow: #010203;
+    --Shadow1:#040406;
+    --Shadow2: #444446;
+    --SforIcon1:#2a2b2c;
+    --SforIcon2: #020305;
+
+  
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, 
+    var(--bg1), var(--bg2));
+
+}
+#container{
+    background: linear-gradient(135deg, 
+    var(--bg2), var(--bg1));
+    box-shadow: 0 0 8px 6px var(--boxShadow);
+    border-radius: 32px;
+    /* border:  5px solid red; */
+
+    
+}
+h1{
+    font-family: sans-serif;
+    margin: 32px auto;
+    color: #4f7afe ;
+}
+#user, #email, #lock, #address,#mobNum{
+   width: 240px;
+   height: 42px;
+   margin: 16px;
+   background: none;
+   font-size: 18px;
+   color: #777;
+   box-shadow:inset 4px 4px 8px var(--Shadow1)
+   ,inset -4px -4px 8px var(--Shadow2) ;
+   border-radius: 16px;
+   padding-left: 4px;
+}
+input{
+    background: none;
+    height: 42px;
+    border: none;
+    outline: none;
+    padding-left: 6px;
+    color: #777;
+    font-size: 16px;
+}
+#bt{
+    width: 240px;
+    height: 42px;
+    background: none;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #4f7afe ;
+    box-shadow:4px 4px 8px var(--Shadow1)
+   , -4px -4px 8px var(--Shadow2) ;
+   margin: 16px;
+}
+#bt:hover{
+    color: #1f5aff;
+    box-shadow:6px 6px 10px var(--Shadow1)
+   , -6px -6px 10px var(--Shadow2) ;
+}
+#btn:active{
+    box-shadow:inset 4px 4px 8px var(--Shadow1)
+   ,inset -4px -4px 8px var(--Shadow2) ;
+   font-size: 16px;
+
+}
+h4{
+    margin: 16px auto;
+    color: #777;
+}
+#social-icons i{
+    margin: 0 10px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    box-shadow:inset 3px 3px 8px var(--SforIcon1)
+   ,inset -3px -3px 8px var(--SforIcon2), 
+   1px 1px 2px var(--SforIcon2),
+   -1px -1px 2px var(--SforIcon1) ;
+    border-radius: 50%;
+    color: #4f7af1;
+    transition-duration: 0.2s;
+}
+#social-icons i:hover{
+    transform: scale(1.2);
+}
+#social-icons i:active{
+    transform: scale(0.9);
+}
+#foot{
+    color: #777;
+    margin: 16px;
+
+}
+#sign{
+    color: #4f7af1;
+}
+#lt{
+    color: #eef;
+}
+#dk{
+    display: none;
+    color: #112;
+}
+#mode button{
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow:4px 4px 8px var(--Shadow1)
+   , -4px -4px 8px var(--Shadow2) ;
+   border-radius: 8px;
+   font-size: 16px;
+   transition-duration: 0.2s;
+}
+#mode button:hover{
+    transform: scale(1.2);
+}
+#mode button:active{
+    transform: scale(0.9);
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+}
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+span.psw a{
+    text-decoration: none;
+    color: #4f7af1 ;    
+  }
